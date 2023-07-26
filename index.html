@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- fonawsome link cdn -->
+    <script
+      src="https://kit.fontawesome.com/236e7d5b35.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fonawsome link cdn -->
+  </head>
+  <body>
+    <!-- navber -->
+    <nav class="navber">
+      <div class="nav-container">
+        <div><img src="./image/walmartLogo.svg" alt="" /></div>
+        <div>
+          <input
+            type="text"
+            id="myInput"
+            size="70"
+            placeholder="Search Walmart Product"
+          />
+        </div>
+        <div class="card-item">
+          <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+          <span class="cart-balanc">$0.00</span>
+          <div class="order"></div>
+        </div>
+      </div>
+    </nav>
+    <!-- navber -->
+
+    <div class="sidebar">
+      <p class="closebar">
+        <i class="fa-solid fa-xmark" style="cursor: pointer"></i>
+      </p>
+
+      <div id="root-sidebar"></div>
+      <hr />
+      <div class="total">
+        <span>Total</span>
+        <span id="total">0.00$</span>
+      </div>
+
+      <button id="pay">Add to Cart</button>
+    </div>
+
+    <div id="root"></div>
+    <br /><br />
+    <script src="index.js"></script>
+  </body>
+</html>
